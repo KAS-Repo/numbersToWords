@@ -1,19 +1,3 @@
-let form = document.getElementById("my-form");
-let numberInput = document.getElementById("my-form").number;
-
-let answer = document.getElementById("answer");
-
-form.addEventListener("submit", (e) => {
-  e.preventDefault();
-
-  let words;
-  // Passing the input to function and saving it in words
-  words = toEnglish(numberInput.value);
-
-  let result = document.getElementById("result");
-  result.innerText = `The result is: ${words}`;
-});
-
 /*
  One-hundred = 100
  One-thousand = 1000
@@ -104,3 +88,31 @@ function toEnglish(number) {
 
   return toEnglish(remainder, words);
 }
+
+describe("Test", function () {
+  it("The out should be the English phrase of numrecial input which is : one thousand nine hundred ninety-nine", function () {
+    let number = toEnglish(1999);
+    expect(number).toBe("one thousand nine hundred ninety-nine");
+  });
+});
+
+describe("Test", function () {
+  it("The out should be the English phrase of numrecial input which is : forty-two", function () {
+    let number = toEnglish(42);
+    expect(number).toBe("forty-two");
+  });
+});
+
+describe("Test", function () {
+  it("The out should be the English phrase of numrecial input which is : seven", function () {
+    let number = toEnglish(7);
+    expect(number).toBe("seven");
+  });
+});
+
+describe("Test", function () {
+  it("The out should be the English phrase of numrecial input which is : two thousand one", function () {
+    let number = toEnglish(2001);
+    expect(number).toBe("two thousand one");
+  });
+});
