@@ -130,3 +130,8 @@ describe("Test", function () {
     expect(number).toBe("ten million twenty-three thousand fifty-six");
   });
 });
+
+/*
+The reason for not copying the function in here again is that Jasmine do not support import syntax yet so I just brought the function here
+and run the tests.
+*/
