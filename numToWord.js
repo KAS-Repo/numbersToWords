@@ -11,7 +11,7 @@ form.addEventListener("submit", (e) => {
   words = toEnglish(numberInput.value);
 
   let result = document.getElementById("result");
-  result.innerText = `The result is: ${words}`;
+  result.innerText = `${words}`;
 });
 
 /*

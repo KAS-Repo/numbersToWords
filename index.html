@@ -3,22 +3,31 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
     <title>Number Conversion</title>
   </head>
   <body>
-    <h1>Converting numbers to words</h1>
-
-    <form id="my-form">
-      <label for="number">Number:</label><br />
-      <input type="number" placeholder="Please enter your number" id="number" />
-      <input type="submit" />
-    </form>
-    <div id="answer">
-      <h2 id="result"></h2>
+    <h1 id="title">Converting numbers to words</h1>
+    <p id="info">Please enter your number and hit submit to convert it to English phrase</p>
+    <div class="wrapper">
+      <div class="content">
+        <form id="my-form">
+          <input
+            class="num-input"
+            type="number"
+            placeholder="Please enter your number"
+            id="number"
+          />
+          <input class="num-input" id="submit" type="submit" />
+        </form>
+        <div id="answer">
+          <h4 id="result" class="msg"></h2>
+        </div>
+      </div>
     </div>
 
     <div>
-      <a href="/test/SpecRunner.html">Click here for running test</a>
+      <a id="link" href="/test/SpecRunner.html">Click here for running test</a>
     </div>
 
     <script type="text/javascript" src="numToWord.js"></script>
