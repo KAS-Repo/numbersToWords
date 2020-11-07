@@ -116,3 +116,17 @@ describe("Test", function () {
     expect(number).toBe("two thousand one");
   });
 });
+
+describe("Test", function () {
+  it("The out should be the English phrase of numrecial input which is : one hundred thousand twenty-three", function () {
+    let number = toEnglish(100023);
+    expect(number).toBe("one hundred thousand twenty-three");
+  });
+});
+
+describe("Test", function () {
+  it("The out should be the English phrase of numrecial input which is : ten million twenty-three thousand fifty-six", function () {
+    let number = toEnglish(10023056);
+    expect(number).toBe("ten million twenty-three thousand fifty-six");
+  });
+});
