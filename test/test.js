@@ -132,6 +132,6 @@ describe("Test", function () {
 });
 
 /*
-The reason for not copying the function in here again is that Jasmine do not support import syntax yet so I just brought the function here
+The reason for copying the function in here again is that Jasmine do not support import syntax yet so I just brought the function here
 and run the tests.
 */
